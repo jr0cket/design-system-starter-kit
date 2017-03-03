@@ -1,0 +1,202 @@
+<!--
+  Templates leverage Nunjucks, a powerful templating language:
+  https://mozilla.github.io/nunjucks/
+
+  # Don't want to use Nunjucks?
+    It is entirely optional. Feel free to use normal HTML instead!
+-->
+
+<!--
+  Extend the global template
+-->
+{% extends "_template.html" %}
+
+<!--
+  Page content (gets injected into the template)
+-->
+{% block content %}
+
+<h2 class="slds-text-align--center slds-text-heading--large slds-m-around--large">
+  Hello Awesome Bristolians!
+</h2>
+
+<!-- Need to find a component to wrap text in, otherwise it looks naff -->
+<p class="slds-text-body--regular slds-m-top--medium">
+  The following are all our wonderful speakers today
+</p>
+
+<p class="slds-text-body--small slds-m-top--medium">Any relations to persons living or dead or not using Lightning is purlely coincidental</p>
+
+<hr />
+
+<!-- Attendee List for Bristol Dev meetup -->
+
+<article class="slds-card">
+  <div class="slds-card__header slds-grid">
+    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <span class="slds-icon_container slds-icon-standard-contact" title="description of icon when needed">
+          <svg class="slds-icon slds-icon--small" aria-hidden="true">
+            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#contact"></use>
+          </svg>
+        </span>
+      </div>
+      <div class="slds-media__body">
+        <h2>
+          <a href="javascript:void(0);" class="slds-card__header-link slds-truncate">
+            <span class="slds-text-heading--small">Contacts (3)</span>
+          </a>
+        </h2>
+      </div>
+    </header>
+    <div class="slds-no-flex">
+      <button class="slds-button slds-button--neutral">New</button>
+    </div>
+  </div>
+
+  <div class="slds-card__body">
+    <table class="slds-table slds-table--bordered slds-no-row-hover slds-table--cell-buffer">
+      <thead>
+        <tr class="slds-text-title--caps">
+          <th scope="col">
+            <div class="slds-truncate" title="Name">Name</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="Company">Company</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="Title">Title</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="Email">Twitter</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="slds-hint-parent">
+          <th scope="row">
+            <div class="slds-truncate" title="Simon Lawrence"><a href="javascript:void(0);">Simon Lawrence</a></div>
+          </th>
+          <td>
+            <div class="slds-truncate" title="Desynit">Monsters of Rock</div>
+          </td>
+          <td>
+            <div class="slds-truncate" title="Director of Beer">Director of Rock</div>
+          </td>
+          <td>
+            <div class="slds-truncate" title="@slawr">@srlawr</div>
+          </td>
+        </tr>
+        <th scope="row">
+          <div class="slds-truncate" title="Simon Goodyear"><a <href="javascript:void(0);">Simon Goodyear</a></div>
+          </th>
+          <td>
+            <div class="slds-truncate" title="Always a Goodyear">Always a Goodyear</div>
+          </td>
+          <td>
+            <div class="slds-truncate" title="Director of Late night Taxies">Director of late night taxies</div>
+          </td>
+          <td>
+            <div class="slds-truncate" title="@slawr">@simongoodyear</div>
+          </td>
+        </tr>
+         <th scope="row">
+          <div class="slds-truncate" title="Chris Lewis"><a <href="javascript:void(0);">Chris Lewis</a></div>
+          </th>
+          <td>
+            <div class="slds-truncate" title="Beanies R Us">Beanies R Us</div>
+          </td>
+          <td>
+            <div class="slds-truncate" title="Director of Late night Taxies">Director of Wooly hats</div>
+          </td>
+          <td>
+            <div class="slds-truncate" title="@slawr">@ChrisAlunLewis</div>
+          </td>
+        </tr>
+        <th scope="row">
+          <div class="slds-truncate" title="John Stevenson"><a <href="http://www.medium.com/@jr0cket">John Stevenson</a></div>
+          </th>
+          <td>
+            <div class="slds-truncate" title="Always a Goodyear">Always a Goodyear</div>
+          </td>
+          <td>
+            <div class="slds-truncate" title="Director of Pepperoni Pizza">Director of Pepperoni Pizza</div>
+          </td>
+          <td>
+            <div class="slds-truncate" title="@jr0cket">@jr0cket</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="slds-card__footer"><a href="javascript:void(0);">View All <span class="slds-assistive-text">entity type</span></a></div>
+</article>
+
+<hr />
+
+<article class="slds-card">
+  <div class="slds-card__header slds-grid">
+    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <span class="slds-icon_container slds-icon-standard-contact" title="description of icon when needed">
+          <svg class="slds-icon slds-icon--small" aria-hidden="true">
+            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#contact"></use>
+          </svg>
+        </span>
+      </div>
+      <div class="slds-media__body">
+        <h2>
+          <a href="javascript:void(0);" class="slds-card__header-link slds-truncate">
+            <span class="slds-text-heading--small">Card Header</span>
+          </a>
+        </h2>
+      </div>
+    </header>
+    <div class="slds-no-flex">
+      <button class="slds-button slds-button--neutral">New</button>
+    </div>
+  </div>
+  <div class="slds-card__body slds-text-align--center"><img src="https://s-media-cache-ak0.pinimg.com/736x/a7/83/6b/a7836b680ea2287034d228c3c8b1769b.jpg"</div>
+  <div class="slds-card__footer">Footer</div>
+</article>
+
+<hr />
+
+<!-- Comment box - just using a simple text area -->
+<div class="slds-text-align--center">
+  <p class="slds-text-body--regular slds-m-top--medium slds-section-title--divider">
+    Share your thoughts
+  </p>
+</div>
+<div class="slds-form-element">
+<label class="slds-form-element__label" for="textarea-input-01"></label>
+<div class="slds-form-element__control">
+  <textarea id="textarea-input-01" class="slds-textarea" placeholder="Please leave your feedback"></textarea>
+  </div>
+</div>
+
+<!-- Dont Fear the Spinner
+   - it does block the whole page though if you uncomment the following code -->
+
+<!--
+     <div class="slds-text-align--center">
+     <p class="slds-text-body--regular slds-m-top--medium slds-section-title--divider">
+     A Lightning Fast Spinner
+     </p>
+     </div>
+
+     <p>
+     Just incase you are finding this page just to fast, here is a spinner that gives you that comforting feeling that you are waiting for something to load.
+     </p>
+
+     <div class="slds-spinner_container">
+     <div role="status" class="slds-spinner slds-spinner--medium">
+     <span class="slds-assistive-text">Loading</span>
+     <div class="slds-spinner__dot-a"></div>
+     <div class="slds-spinner__dot-b"></div>
+     </div>
+     </div>
+   -->
+
+
+{% endblock %}

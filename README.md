@@ -2,6 +2,9 @@
 
 ![Starter Kit by Salesforce UX](https://rawgit.com/salesforce-ux/design-system-starter-kit/master/starter-kit.svg)
 
+> Modifications made for my presentation at Bristol Developer meetup are in the `bristol-dg` branch.  Use the command `git checkout bristol-dg` and navigate to http://localhost:3000/bristol.html
+> The spinner component blocks the whole page, so it has been left commented out, remove the comments to see it in action.
+
 Rapid prototyping environment using the [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/), HTML, and [Sass](http://www.sass-lang.com/).
 
 ## Who is this for?
